@@ -693,7 +693,7 @@ const App = () => {
                <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-indigo-200" />
                   <div>
-                     <p className="font-bold text-slate-900">Mr. Fru Nji</p>
+                     <p className="font-bold text-slate-900">Mr. Fru N.</p>
                      <p className="text-sm text-slate-500">Proprietor, SSEC Bamenda</p>
                   </div>
                </div>
@@ -706,8 +706,8 @@ const App = () => {
                <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-slate-200" />
                   <div>
-                     <p className="font-bold text-slate-900">Mrs. Judith B.</p>
-                     <p className="text-sm text-slate-500">Chief Bursar, CUIB Buea</p>
+                     <p className="font-bold text-slate-900">Mr. Morfaw E.</p>
+                     <p className="text-sm text-slate-500">H.O.D, CUIB S&A Buea</p>
                   </div>
                </div>
             </div>
