@@ -269,7 +269,7 @@ const App = () => {
             <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-violet-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-200">
               <School className="text-white w-6 h-6" />
             </div>
-            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-900 to-indigo-700 tracking-tight">AcadPackPro</span>
+            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-900 to-indigo-700 tracking-tight">Acadpack</span>
           </div>
 
           {/* Desktop Nav */}
@@ -319,7 +319,7 @@ const App = () => {
                 Run Your Entire School — <span className="text-indigo-600">Smarter, Faster</span>, Fully Automated.
               </h1>
               <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0">
-                AcadPackPro is a powerful all-in-one school management system designed to streamline operations and financial management for institutions of all sizes.
+                Acadpack is a powerful all-in-one school management system designed to streamline operations and financial management for institutions of all sizes.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
@@ -487,7 +487,7 @@ const App = () => {
           </div>
 
           <div className="mt-16 pt-16 border-t border-white/10 text-center">
-             <p className="text-xl italic text-slate-300">{"AcadPackPro eliminates all of this with a fully integrated digital solution."}</p>
+             <p className="text-xl italic text-slate-300">{"Acadpack eliminates all of this with a fully integrated digital solution."}</p>
           </div>
         </div>
       </section>
@@ -658,7 +658,7 @@ const App = () => {
               { 
                 step: "03", 
                 title: "Automate Everything", 
-                desc: "Let AcadPackPro handle reports, SMS, and analytics automatically.",
+                desc: "Let Acadpack handle reports, SMS, and analytics automatically.",
                 icon: <Zap className="w-6 h-6" /> 
               }
             ].map((step, i) => (
@@ -701,7 +701,7 @@ const App = () => {
             <div className="p-10 rounded-[2rem] bg-white border border-slate-200 relative shadow-sm hover:shadow-md transition-shadow">
                <div className="text-6xl text-slate-100 absolute top-6 left-6 font-serif leading-none">“</div>
                <p className="text-lg md:text-xl text-slate-700 mb-8 relative z-10 font-medium italic">
-                 {"AcadPackPro completely transformed how we manage our school. Everything is now centralized, allowing our team to focus on students rather than chasing missing records."}
+                 {"Acadpack completely transformed how we manage our school. Everything is now centralized, allowing our team to focus on students rather than chasing missing records."}
                </p>
                <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-slate-200" />
@@ -721,7 +721,7 @@ const App = () => {
           <h2 className="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {[
-              { q: "What type of schools can use AcadPackPro?", a: "AcadPackPro is built for institutions of all sizes, from nursery and primary schools to large universities and private colleges." },
+              { q: "What type of schools can use Acadpack?", a: "Acadpack is built for institutions of all sizes, from nursery and primary schools to large universities and private colleges." },
               { q: "Is the system secure?", a: "Yes. We use industry-standard encryption and role-based access control (RBAC) to ensure student and financial data remains private and protected." },
               { q: "Can it handle large institutions?", a: "Absolutely. Our cloud-based architecture is designed to scale and can manage thousands of students and teachers simultaneously." },
               { q: "Does it support mobile access?", a: "Yes, our dashboard is fully responsive. Staff can enter grades and administrators can check reports from any smartphone, tablet, or PC." },
@@ -751,7 +751,7 @@ const App = () => {
             
             <div className="relative z-10 max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight">Take Control of Your School Today</h2>
-              <p className="text-indigo-100 text-lg md:text-xl mb-10">Stop wasting time on manual processes. Join the growing number of schools automating with AcadPackPro.</p>
+              <p className="text-indigo-100 text-lg md:text-xl mb-10">Stop wasting time on manual processes. Join the growing number of schools automating with Acadpack.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="https://seplus.acadpack.fastwebcm.org/index.php" target='_blank'><button className="px-10 py-5 bg-white text-indigo-600 rounded-2xl font-bold text-lg shadow-xl hover:bg-slate-50 transition-all hover:scale-105 active:scale-95">
                   Get Started Now
@@ -774,7 +774,7 @@ const App = () => {
                 <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
                   <School className="text-white w-5 h-5" />
                 </div>
-                <span className="text-lg font-bold text-slate-900">AcadPackPro</span>
+                <span className="text-lg font-bold text-slate-900">Acadpack</span>
               </div>
               <p className="text-slate-500 leading-relaxed mb-6 max-w-sm">
                 The most comprehensive school management system for academic excellence and financial transparency across Cameroon and beyond.
