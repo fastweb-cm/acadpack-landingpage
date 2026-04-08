@@ -41,4 +41,4 @@ jobs:
                   password: ${{ secrets.FTP_PASSWORD }}
                   # Path where your Node app is hosted in cPanel
                   local-dir: .next/standalone/
-                  server-dir: /home/fastxrdj/acadpack.fastwebcm.org
+                  server-dir: ./
