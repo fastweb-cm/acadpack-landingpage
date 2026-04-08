@@ -1,0 +1,44 @@
+name: 🚀 Deploy to cPanel
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: 🚚 Checkout code
+              uses: actions/checkout@v4
+
+            - name: 🏗 Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "20"
+                  cache: "npm"
+
+            - name: 📦 Install dependencies
+              run: npm ci
+
+            - name: 🛠 Build Next.js
+              run: npm run build
+
+            - name: 🧹 Prepare Files for FTP
+              run: |
+                  # The standalone output creates .next/standalone
+                  # We need to move static assets into it for a complete package
+                  cp -r public .next/standalone/public
+                  cp -r .next/static .next/standalone/.next/static
+                  # Add the custom server.ts bridge
+                  cp server.ts .next/standalone/server.ts
+
+            - name: 📂 Sync to cPanel via FTP
+              uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+              with:
+                  server: ${{ secrets.FTP_SERVER }}
+                  username: ${{ secrets.FTP_USERNAME }}
+                  password: ${{ secrets.FTP_PASSWORD }}
+                  # Path where your Node app is hosted in cPanel
+                  local-dir: .next/standalone/
+                  server-dir: /home/fastxrdj/acadpack.fastwebcm.org
