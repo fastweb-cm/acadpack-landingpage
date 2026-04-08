@@ -26,12 +26,16 @@ jobs:
 
             - name: 🧹 Prepare Files for FTP
               run: |
-                  # The standalone output creates .next/standalone
-                  # We need to move static assets into it for a complete package
-                  cp -r public .next/standalone/public
-                  cp -r .next/static .next/standalone/.next/static
-                  # Add the custom server.js bridge
-                  cp server.js .next/standalone/server.js
+                  # 1. Move the production server and node_modules to the root
+                  cp -r .next/standalone/. ./
+
+                  # 2. Ensure static assets are in the internal .next folder
+                  mkdir -p .next/static
+                  cp -r .next/static/. .next/static/
+                  cp -r public/. public/
+
+                  # 3. Clean up the standalone folder so it's not duplicated
+                  rm -rf .next/standalone
 
             - name: 📂 Sync to cPanel via FTP
               uses: SamKirkland/FTP-Deploy-Action@v4.3.5
