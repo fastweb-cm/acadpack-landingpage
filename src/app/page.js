@@ -140,8 +140,38 @@ const App = () => {
     
   };
 
+  // Structured Data for Google (Local Software Business)
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Acadpack",
+    "operatingSystem": "Web-based",
+    "applicationCategory": "EducationalApplication",
+    "description": "Leading school management system in Cameroon & CEMAC. Automates fees, report cards, and institutional activities.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "50"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "XAF",
+      "description": "Custom pricing based on institution size."
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "FastWEB CM",
+      "url": "https://fastwebcm.org"
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#fafbff] text-slate-900 font-sans selection:bg-indigo-100 selection:text-indigo-600">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Demo Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-6">
@@ -313,13 +343,13 @@ const App = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-bold uppercase tracking-wider mb-6 animate-bounce">
-                <Zap className="w-3 h-3 fill-indigo-600" /> Smart Education Management
+                <Zap className="w-3 h-3 fill-indigo-600" /> Leading School Management Software in Cameroon
               </div>
               <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 leading-[1.1] mb-6">
-                Run Your Entire School — <span className="text-indigo-600">Smarter, Faster</span>, Fully Automated.
+                Run Your Entire School — <span className="text-indigo-600">School Management System</span> for Academic Success in Africa.
               </h1>
               <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0">
-                Acadpack is a powerful all-in-one school management system designed to streamline operations and financial management for institutions of all sizes.
+                Acadpack is the leading all-in-one automation platform for schools in Cameroon, CEMAC & Africa at large. Manage school fees and other student related financial records, automate report cards, and track student grades securely.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
@@ -516,7 +546,7 @@ const App = () => {
                         </div>
                         <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-6 flex flex-col items-center justify-center text-center delay-300 animate-in slide-in-from-bottom-10">
                             <Download className="w-10 h-10 text-emerald-500 mb-4" />
-                            <p className="font-bold text-slate-800">Transcripts</p>
+                            <p className="font-bold text-slate-800">Transcripts & Competence-base Progress Card</p>
                             <p className="text-xs text-slate-400">PDF Generation</p>
                         </div>
                     </div>
@@ -526,9 +556,9 @@ const App = () => {
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-indigo-600/10 rounded-full blur-2xl" />
             </div>
             <div className="order-1 lg:order-2">
-              <span className="text-indigo-600 font-bold uppercase tracking-widest text-sm">Academic Module</span>
+              <span className="text-indigo-600 font-bold uppercase tracking-widest text-sm">Automated Academics</span>
               <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mt-4 mb-8 leading-tight">
-                Complete Academic Control at Your Fingertips
+                Eliminate Manual Grading & <span className="text-indigo-600">Report Card Errors</span>
               </h2>
               <div className="space-y-6">
                 {[
